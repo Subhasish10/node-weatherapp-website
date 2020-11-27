@@ -10,7 +10,7 @@ const forecast = (latitude,longitude,callback)=>{
         }else if(body.error){
             callback('Location not Found!',undefined)
         }else{
-            callback(undefined,body.daily.data[0].summary +' It is currently '+ body.currently.temperature + ' degrees out. Thare is a '+ body.currently.precipProbability + '% chance of Rain'
+            callback(undefined,body.daily.data[0].summary +' It is currently '+ body.currently.temperature + ' degree celsius out. Thare is a '+ body.currently.precipProbability + '% chance of Rain !'
             )
         }
     })
